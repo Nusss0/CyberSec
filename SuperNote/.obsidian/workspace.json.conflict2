@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "35af27856be38a7a",
+    "type": "split",
+    "children": [
+      {
+        "id": "3477e229a97ca586",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44cdc08cb958c0e8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "23e01e83a048d683",
+    "type": "split",
+    "children": [
+      {
+        "id": "1bf8dd7d113edb9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c2f2036a91fdea2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6f9b977056c77457",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1a69b42975596526",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283.5
+  },
+  "right": {
+    "id": "375b1fcca555fdbd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1bfeddf5608cb35b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36d66cb98a6202f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Material/NeoVim/NeoVim ShortCut.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for NeoVim ShortCut"
+            }
+          },
+          {
+            "id": "d910974ead1ed87a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Material/NeoVim/NeoVim ShortCut.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from NeoVim ShortCut"
+            }
+          },
+          {
+            "id": "bc304ada4525299b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9fcf0f3b19b8b9bc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "07feb97df11cdda7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Material/NeoVim/NeoVim ShortCut.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of NeoVim ShortCut"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6c2f2036a91fdea2",
+  "lastOpenFiles": [
+    "Material/OverTheWire/Narnia/Narnia (3 -> 4).md",
+    "Narnia (4 -> 5).md",
+    "Material/OverTheWire/Narnia/Narnia (1 -> 2).md",
+    "Material/OverTheWire/Narnia/Narnia (2 -> 3).md",
+    "Material/Language/Assembly/Assembly - Registers.md",
+    "Templates/CTF Solution Template.md",
+    "test.md",
+    "Material/OverTheWire/Narnia/Narnia (0 -> 1).md",
+    "Material/Linux/CLI/ln.md",
+    "Pasted image 20260211072335.png",
+    "Material/Linux/CLI/perl.md",
+    "Material/Language/Assembly/Assembly - Stack Operations.md",
+    "Material/Linux/SysCall/access().md",
+    "Material/Language/C/setuid().md",
+    "Material/Linux/General/User ID in Linux.md",
+    "Material/Language/C/execve().md",
+    "Material/Language/C/setreuid().md",
+    "geteuid().md",
+    "Material/Language/C/getenv().md",
+    "Material/OverTheWire/Narnia/Narnia ( 0 ).md",
+    "Material/Linux/General/SetUID Files.md",
+    "Material/Linux/GeneralSetup/Google Drive Sync Setup on Kali Linux.md",
+    "SetUp/Google Drive Sync Setup on Kali Linux.md",
+    "SetUp",
+    "Material/General/fork.md",
+    "Material/General/Environment Variables.md",
+    "Material/General/process.md",
+    "Material/Language/C",
+    "Material/Linux/GeneralSetup",
+    "Material/Linux/CLI/cd.md",
+    "Material/Language/Python",
+    "Material/OverTheWire/Narnia",
+    "Material/Language/Assembly",
+    "Material/Language",
+    "Material/Language/Debugger",
+    "Material/Linux/General",
+    "Material/Linux/SysCall",
+    "Image/Pasted image 20260113114515.png",
+    "Image/Pasted image 20260113113857.png",
+    "Image/Pasted image 20260113113718.png"
+  ]
+}
