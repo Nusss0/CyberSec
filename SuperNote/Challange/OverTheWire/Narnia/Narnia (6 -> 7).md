@@ -1,7 +1,7 @@
 ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
-**Tags :** #Challenge #BufferOverflow #C #BinaryExploitation
+**Tags :** #Challenge #BufferOverflow #BinaryExploitation
 **Completion Date & Time :** 2026 - 05 - 23 / 16:39
 
 ---
