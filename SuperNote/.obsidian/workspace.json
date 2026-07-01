@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "290ba9aaf5a57761",
+        "id": "88588940ef1c44fa",
         "type": "tabs",
         "children": [
           {
-            "id": "e47fabe8d87f09ca",
+            "id": "cf0639bf50b37d33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challange/OverTheWire/Narnia/Narnia (6 -> 7).md",
+                "file": "Challange/OverTheWire/Narnia/Narnia (7 -> 8).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Narnia (6 -> 7)"
+              "title": "Narnia (7 -> 8)"
             }
           }
         ]
@@ -183,27 +183,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "e47fabe8d87f09ca",
+  "active": "cf0639bf50b37d33",
   "lastOpenFiles": [
-    "Challange/Gemastik/Fokus Kripto.md",
-    "Challange/Gemastik/VS Code Extension.md",
-    "Challange/OverTheWire/Narnia/Narnia (5 -> 6).md",
-    "Challange/Gemastik",
-    "Challange/OverTheWire/Narnia/Narnia (6 -> 7).md",
-    "Challange/OverTheWire/Narnia/Narnia (2 -> 3).md",
-    "Challange/OverTheWire/Narnia/Narnia (1 -> 2).md",
-    "Challange/OverTheWire/Narnia/Narnia (3 -> 4).md",
-    "Challange/OverTheWire/Leviathan/Leviathan ( 0 ).md",
-    "Material/Language/C/printf().md",
+    "Material/Language/Python/Python - Payload Insert.md",
+    "Challange/OverTheWire/Narnia/Narnia (7 -> 8).md",
     "Material/Language/C/snprintf().md",
-    "Material/Language/Assembly/Assembly - Arithmetic Operations.md",
-    "Material/Language/Assembly/Assembly.md",
+    "Challange/OverTheWire/Narnia/Narnia (6 -> 7).md",
+    "Challange/OverTheWire/Narnia/Narnia (5 -> 6).md",
+    "Challange/OverTheWire/Narnia/Narnia (2 -> 3).md",
+    "Challange/OverTheWire/Narnia/Narnia ( 0 ).md",
+    "Challange/OverTheWire/Narnia/Narnia (0 -> 1).md",
+    "Challange/OverTheWire/Narnia/Narnia (3 -> 4).md",
+    "Challange/OverTheWire/Narnia/Narnia (1 -> 2).md",
     "Challange/OverTheWire/Narnia/Narnia (4 -> 5).md",
+    "Material/Language/C/setuid().md",
     "Material/Attacks/Format String Attack.md",
-    "Material/Language/C/execve().md",
+    "SetUp/Google Drive Sync Setup on Kali Linux.md",
+    "Templates/Linux CLI Definition Template.md",
+    "Templates/Definition Template.md",
+    "Templates/CTF Solution Template.md",
+    "Material/Language/C/setreuid().md",
     "Material/Language/C/getenv().md",
+    "Material/Language/Assembly/Assembly - Data Movement.md",
+    "Material/Language/Assembly/Assembly.md",
+    "Material/Language/Assembly/Assembly - Stack Operations.md",
+    "Material/Language/Assembly/Assembly - Arithmetic Operations.md",
+    "Material/Language/C/printf().md",
+    "Material/Language/C/execve().md",
     "Challange",
-    "Material/Attacks",
-    "Material/Language/C/setreuid().md"
+    "Material/Attacks"
   ]
 }
