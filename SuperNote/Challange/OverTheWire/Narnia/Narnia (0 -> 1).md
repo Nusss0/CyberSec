@@ -5,7 +5,7 @@
 **Completion Date & Time :** 2026 - 01 - 23 / 20:14
 
 ---
-## FLAG : `WDcYUTG5ul`
+## FLAG : `O8dJypubLr`
 
 ---
 ## Solution :
@@ -113,13 +113,14 @@ narnia1
  Now we could access the shell, and retrieve the password : 
  ```shell
  cat /etc/narnia_pass/narnia1
-WDcYUTG5ul
+O8dJypubLr
  ```
 
 ---
 ### Key Takeaways : 
 - We could use `pwntool` instead of shell input, but for this level, it was a bit overkill.
 - Checks for available functions also important for analysis.
+- Using `cat` will hold the program (because we use `pipeline` for stdin help), without `;cat` program will not spawn a shell. After python finishes, `cat` (with no file argument) starts reading from _your terminal/keyboard_ and forwarding it into the pipe. So the pipe stays open, and whatever you type flows: keyboard → cat → pipe → narnia0's shell. That's how you get an interactive shell instead of one that dies immediately.
 
 
 ---
