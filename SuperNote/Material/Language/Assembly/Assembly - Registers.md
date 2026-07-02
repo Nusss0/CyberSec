@@ -39,16 +39,16 @@ x86-64 has backward compatibility with 32-bit (x86) and 16-bit architectures, so
 ---
 ## General Purpose Registers
 
-| Register | Full Name | Common Use | Notes |
-|----------|-----------|------------|-------|
-| `RAX` | Accumulator | Return values, arithmetic operations | Function return value stored here |
-| `RBX` | Base | Base pointer for memory access | Callee-saved (must preserve) |
-| `RCX` | Counter | Loop counter, string operations | 4th argument in function calls |
-| `RDX` | Data | I/O operations, arithmetic extensions | 3rd argument in function calls |
-| `RSI` | Source Index | Source pointer for string operations | 2nd argument in function calls |
-| `RDI` | Destination Index | Destination pointer for string ops | 1st argument in function calls |
-| `RSP` | Stack Pointer | **Points to top of stack** | **Never use for general storage!** |
-| `RBP` | Base Pointer | Base of current stack frame | Often used to access local variables |
+| Register | Full Name         | Common Use                                                                                                     | Notes                                |
+| -------- | ----------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| `RAX`    | Accumulator       | Return values, arithmetic operations                                                                           | Function return value stored here    |
+| `RBX`    | Base              | Base pointer for memory access<br>If +, then it points to parameters<br>If -, then it points to local variable | Callee-saved (must preserve)         |
+| `RCX`    | Counter           | Loop counter, string operations                                                                                | 4th argument in function calls       |
+| `RDX`    | Data              | I/O operations, arithmetic extensions                                                                          | 3rd argument in function calls       |
+| `RSI`    | Source Index      | Source pointer for string operations                                                                           | 2nd argument in function calls       |
+| `RDI`    | Destination Index | Destination pointer for string ops                                                                             | 1st argument in function calls       |
+| `RSP`    | Stack Pointer     | **Points to top of stack**                                                                                     | **Never use for general storage!**   |
+| `RBP`    | Base Pointer      | Base of current stack frame                                                                                    | Often used to access local variables |
 
 **Modern Usage (x64 Linux Calling Convention):**
 - **RDI**: 1st function argument

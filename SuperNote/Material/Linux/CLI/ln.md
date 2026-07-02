@@ -1,5 +1,5 @@
-ls## Definition
->*`(link)`* is a Linux Command used to create links between files (symbolic or hard link).
+## Definition
+>*`(link)`* is a Linux Command used to create links between files (symbolic/symlink or hard link).
 
 ---
 ## Tags 

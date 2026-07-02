@@ -5,7 +5,7 @@
 **Completion Date & Time :** 2026 - 02 - 08 / 22:34
 
 ---
-## FLAG : `5agRAXeBdG`
+## FLAG : `0h8Tj5fxbv`
 
 ---
 ## Solution :
@@ -131,7 +131,7 @@ Trying to execute EGG!
 $ whoami
 narnia2
 $ cat /etc/narnia_pass/narnia2
-5agRAXeBdG
+0h8Tj5fxbv
 
 ```
 
