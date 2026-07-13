@@ -1,8 +1,9 @@
-## Challenge Info
-
-**Platform:** 
-**Tags :** #Challenge
-**Completion Date & Time :** {{date}} / {{time}}
+---
+Platform:
+Tittle:
+Date & Time: "{{date}} {{time}}"
+tags:
+---
 
 ---
 ## FLAG : `flag{}`
