@@ -147,4 +147,4 @@ i1SQ81fkb8
 
 ---
 ## Next Challenge :
-[[Narnia (8 -> 9)]]
+[[Narnia (8)]]
