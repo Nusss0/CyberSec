@@ -3,6 +3,7 @@ tags:
   - Material
   - HTB
   - CPTS
+  - Networking
 ---
 > Service scanning identifies the operating system and any available services running on a target. A service is an application running on a computer that performs a useful function for other users or computers. We are interested in services that are misconfigured or vulnerable, so we can coerce them into performing unintended actions such as executing a command of our choosing.
 
