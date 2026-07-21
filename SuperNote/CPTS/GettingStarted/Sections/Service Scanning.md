@@ -24,12 +24,12 @@ To access a service remotely, we connect using the correct IP address and port n
 
 The most basic scan targets an IP directly. Without additional options, Nmap scans only the 1,000 most common ports by default.
 
-```shellsession
+```shell
 nmap 10.129.42.253
 ```
 
 > [!info]- Basic scan output
-> ```shellsession
+> ```shell
 > Starting Nmap 7.80 ( https://nmap.org ) at 2021-02-25 16:07 EST
 > Nmap scan report for 10.129.42.253
 > Host is up (0.11s latency).
@@ -60,12 +60,12 @@ Flags for a more detailed scan:
 - `-sV` — version scan: fingerprint services to identify the protocol, application name, and version (backed by a database of over 1,000 service signatures).
 - `-p-` — scan all 65,535 TCP ports.
 
-```shellsession
+```shell
 nmap -sV -sC -p- 10.129.42.253
 ```
 
 > [!info]- Advanced scan output (-sV -sC -p-)
-> ```shellsession
+> ```shell
 > PORT    STATE SERVICE     VERSION
 > 21/tcp  open  ftp         vsftpd 3.0.3
 > | ftp-anon: Anonymous FTP login allowed (FTP code 230)
@@ -91,13 +91,13 @@ The `-sC` script scan also reports server headers (`http-server-header`) and the
 
 `-sC` runs many useful default scripts, but sometimes a specific script is required. For example, auditing a Citrix installation for CVE-2019-19781.
 
-```shellsession
+```shell
 locate scripts/citrix
 ```
 
 Syntax for running a specific script:
 
-```shellsession
+```shell
 nmap --script <script name> -p<port> <host>
 ```
 
@@ -112,13 +112,13 @@ nmap --script <script name> -p<port> <host>
 
 Nmap attempts to grab banners with `nmap -sV --script=banner <target>`. It can also be done manually with Netcat.
 
-```shellsession
+```shell
 nc -nv 10.129.42.253 21
 ```
 
 This reveals the vsFTPd version on the server is 3.0.3. Automating with Nmap's scripting engine across a range:
 
-```shellsession
+```shell
 nmap -sV --script=banner -p21 10.10.10.0/24
 ```
 
@@ -129,18 +129,18 @@ nmap -sV --script=banner -p21 10.10.10.0/24
 
 A scan of the default FTP port (21) reveals the vsftpd 3.0.3 installation, that anonymous authentication is enabled, and that a `pub` directory is available.
 
-```shellsession
+```shell
 nmap -sC -sV -p21 10.129.42.253
 ```
 
 Connect using the `ftp` command-line utility:
 
-```shellsession
+```shell
 ftp -p 10.129.42.253
 ```
 
 > [!info]- FTP session (anonymous login and file download)
-> ```shellsession
+> ```shell
 > Name (10.129.42.253:user): anonymous
 > 230 Login successful.
 >
@@ -162,7 +162,7 @@ ftp -p 10.129.42.253
 
 FTP supports common commands such as `cd` and `ls`, and allows downloading files with `get`. Inspecting the downloaded `login.txt` reveals credentials that could further access to the system.
 
-```shellsession
+```shell
 cat login.txt
 
 admin:ftp@dmin123
@@ -175,12 +175,12 @@ admin:ftp@dmin123
 
 Sensitive data, including credentials, can be in network file shares, and some SMB versions may be vulnerable to RCE exploits such as EternalBlue. Nmap has many scripts for enumerating SMB, such as `smb-os-discovery.nse`, which extracts the reported OS version.
 
-```shellsession
+```shell
 nmap --script smb-os-discovery.nse -p445 10.10.10.40
 ```
 
 > [!info]- smb-os-discovery output (legacy Windows 7 host)
-> ```shellsession
+> ```shell
 > | smb-os-discovery:
 > |   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
 > |   Computer name: CEO-PC
@@ -190,7 +190,7 @@ nmap --script smb-os-discovery.nse -p445 10.10.10.40
 
 A legacy Windows 7 host could be further enumerated to confirm if it is vulnerable to EternalBlue; the Metasploit Framework has modules to validate and exploit it. Scanning the module target reveals a Linux kernel, Samba 4.6.2, and hostname GS-SVCSCAN.
 
-```shellsession
+```shell
 nmap -A -p445 10.129.42.253
 ```
 
@@ -200,18 +200,18 @@ nmap -A -p445 10.129.42.253
 
 `smbclient` can enumerate and interact with SMB shares. The `-L` flag lists available shares; `-N` suppresses the password prompt.
 
-```shellsession
+```shell
 smbclient -N -L \\\\10.129.42.253
 ```
 
 This reveals the non-default share `users`. Connecting as the guest user returns `NT_STATUS_ACCESS_DENIED`, indicating guest access is not permitted. Connecting with credentials for user bob (`bob:Welcome1`):
 
-```shellsession
+```shell
 smbclient -U bob \\\\10.129.42.253\\users
 ```
 
 > [!info]- smbclient session (authenticated, file download)
-> ```shellsession
+> ```shell
 > smb: \> ls
 >   bob                                 D        0  Thu Feb 25 16:42:23 2021
 >
@@ -232,13 +232,13 @@ This gains access to the `users` share and the interesting file `passwords.txt`,
 
 In SNMP versions 1 and 2c, access is controlled using a plaintext community string; if the name is known, access is gained. Encryption and authentication were only added in version 3. Examining process parameters might reveal credentials passed on the command line (reusable elsewhere given password reuse), along with routing information, services bound to additional interfaces, and installed software versions.
 
-```shellsession
+```shell
 snmpwalk -v 2c -c public 10.129.42.253 1.3.6.1.2.1.1.5.0
 ```
 
 The `private` community string times out (no response). The tool `onesixtyone` can brute force community string names using a dictionary file such as `dict.txt`.
 
-```shellsession
+```shell
 onesixtyone -c dict.txt 10.129.42.254
 ```
 
@@ -248,6 +248,6 @@ onesixtyone -c dict.txt 10.129.42.254
 > Service scanning and enumeration is a vast subject. The aspects covered here apply to many networks, including HTB machines.
 
 ---
-## Source
+## Related Source
 
-[]()
+[[Nmap]], [[FTP]], [[SMB]]

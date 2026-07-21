@@ -3,7 +3,6 @@ title: Obsidian Features Demo
 date: 2026-07-12
 tags:
   - Material
-  - reference
 status: active
 aliases:
   - Feature Demo

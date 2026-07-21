@@ -1,11 +1,8 @@
-## Definition
->*`()`* is a Linux Command used to 
-
 ---
-## Tags 
-
-#Material 
-
+tags:
+---
+## Function
+>**
 ---
 ###  Usage : 
 ```bash

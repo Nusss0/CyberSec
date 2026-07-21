@@ -1,7 +1,8 @@
 ---
 tags:
-  - tmux
-  - cheatsheet
+  - Material
+  - Productivity
+  - Tools
 ---
 > tmux is a terminal multiplexer: it lets one terminal hold multiple sessions, windows, and panes. The **prefix** (`Ctrl+b` by default) is pressed before any in-tmux keybinding — press it, release, then press the command key. Commands starting with `tmux` are run at the shell, not with the prefix.
 

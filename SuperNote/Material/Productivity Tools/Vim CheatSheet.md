@@ -1,7 +1,8 @@
 ---
 tags:
-  - vim
-  - cheatsheet
+  - Material
+  - Productivity
+  - Tools
 ---
 > Vim is a modal text editor: keys do different things depending on the current mode. Most commands below run in Normal mode unless stated otherwise.
 
