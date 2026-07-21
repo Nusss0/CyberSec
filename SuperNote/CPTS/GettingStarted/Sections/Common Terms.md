@@ -3,6 +3,8 @@ tags:
   - CPTS
   - Material
   - HTB
+  - Networking
+  - Shell
 ---
 > Penetration testing/hacking is an enormous field with countless technologies. The terms below are the most common ones encountered repeatedly and must be firmly grasped. This is not an exhaustive list, but is enough to get started with fundamental Modules and easy HTB boxes.
 

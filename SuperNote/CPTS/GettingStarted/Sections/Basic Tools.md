@@ -3,6 +3,7 @@ tags:
   - Material
   - HTB
   - CPTS
+  - Tools
 ---
 > Tools such as SSH, Netcat, Tmux, and Vim are essential and used daily by most information security professionals. They are not intended to be penetration testing tools, but they are critical to the penetration testing process, so they must be mastered.
 
