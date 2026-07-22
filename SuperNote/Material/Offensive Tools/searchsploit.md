@@ -1,12 +1,14 @@
 ---
 tags:
+  - Tools
+  - Networking
 ---
 ## Function
->**
+>*to search for a specific application by its name*
 ---
 ###  Usage : 
 ```shell
-
+searchploit <Appname>
 ```
 
 ### Options : 

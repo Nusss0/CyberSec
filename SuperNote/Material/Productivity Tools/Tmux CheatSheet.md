@@ -93,15 +93,15 @@ Pane commands (run in command mode via `Ctrl+b` `:`):
 - `Ctrl+b` `PgUp` — Enter copy mode and scroll one page up
 - `q` — Quit copy mode
 
-[!info]- Navigation inside copy mode (vi keys)
-- `g` — Go to top line
-- `G` — Go to bottom line
-- `Ctrl+u` / `Ctrl+d` — Scroll up / down
-- `h` `j` `k` `l` — Move cursor left / down / up / right
-- `w` / `b` — Move cursor forward / backward one word
-- `/` — Search forward
-- `?` — Search backward
-- `n` / `N` — Next / previous keyword occurrence
+>[!info]- Navigation inside copy mode (vi keys)
+>- `g` — Go to top line
+>- `G` — Go to bottom line
+>- `Ctrl+u` / `Ctrl+d` — Scroll up / down
+>- `h` `j` `k` `l` — Move cursor left / down / up / right
+>- `w` / `b` — Move cursor forward / backward one word
+>- `/` — Search forward
+>- `?` — Search backward
+>- `n` / `N` — Next / previous keyword occurrence
 
 Selecting and copying:
 

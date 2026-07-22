@@ -1,9 +1,7 @@
 ---
 tags:
-  - Material
   - Tools
   - Networking
-  - Offensive
 ---
 ## Function
 >**

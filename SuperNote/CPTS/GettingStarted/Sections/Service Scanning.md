@@ -251,4 +251,4 @@ onesixtyone -c dict.txt 10.129.42.254
 ---
 ## Related Source
 
-[[Nmap]], [[FTP]], [[SMB]]
+[[Nmap]]
